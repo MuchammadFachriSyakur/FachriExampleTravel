@@ -1,0 +1,48 @@
+---
+const {
+  title = "FachriExampleTravel - Partner Perjalanan Wisata Terpercaya",
+  description = "FachriExampleTravel adalah partner perjalanan wisata terpercaya di Indonesia. Kami menyediakan paket tour profesional, aman, dan nyaman untuk menjelajahi keindahan nusantara.",
+  url = "https://fachriexampletravel.com",
+  image = "/og-image.jpg"
+} = Astro.props;
+---
+
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary SEO -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content="IndoTravel" />
+    <link rel="canonical" href={url} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display">
+    <slot />
+  </body>
+</html>

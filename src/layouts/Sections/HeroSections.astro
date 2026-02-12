@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import heroImage from "../../assets/images/hero.webp";
+---
+
+    <section class="relative min-h-[85vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <Image
+          alt="Happy family enjoying holiday at a tropical resort in Indonesia"
+          class="w-full h-full object-cover"
+          src={heroImage}
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-background-dark/80 via-background-dark/40 to-transparent"
+        ></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-2xl">
+          <span
+            class="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/20 border border-primary/30 text-primary-light text-white text-sm font-bold uppercase tracking-wider"
+          >
+            Tour &amp; Travel Resmi Indonesia
+          </span>
+          <h1
+            class="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-6"
+          >
+            Partner Perjalanan <br /><span class="text-primary"
+              >Wisata Terpercaya</span
+            >
+          </h1>
+          <p class="text-xl text-slate-200 mb-10 leading-relaxed">
+            Melayani ribuan pelanggan dengan layanan profesional, aman, dan
+            nyaman. Jelajahi keindahan nusantara bersama tim ahli kami.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              class="flex items-center justify-center px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform"
+              href="#paket"
+            >
+              Lihat Paket Wisata
+            </a>
+            <button
+              class="flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-xl font-bold text-lg hover:bg-white/20 transition-all"
+            >
+              Konsultasi Gratis
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>

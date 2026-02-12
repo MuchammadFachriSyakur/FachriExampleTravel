@@ -1,17 +1,38 @@
 ---
-
+import "../styles/global.css";
+import BaseLayouts from "../layouts/BaseLayouts.astro";
+import Navbar from "../components/Navbar.astro";
+import HeroSections from "../layouts/Sections/HeroSections.astro";
+import TrustBarSections from "../layouts/Sections/TrustBarSections.astro";
+import AboutSections from "../layouts/Sections/AboutSections.astro";
+import TourPackagesSections from "../layouts/Sections/TourPackagesSections.astro";
+import WhyChooseUsSections from "../layouts/Sections/WhyChooseSections.astro";
+import BookingProccess from "../layouts/Sections/BookingProcces.astro";
+import TestimonialsSections from "../layouts/Sections/TestimonialsSections.astro";
+import CTA from "../layouts/Sections/CTA.astro";
+import Footer from "../layouts/Sections/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayouts>
+ <Navbar></Navbar>
+ <HeroSections></HeroSections>
+ <TrustBarSections></TrustBarSections>
+ <AboutSections></AboutSections>
+ <TourPackagesSections></TourPackagesSections>
+ <WhyChooseUsSections></WhyChooseUsSections>
+ <BookingProccess></BookingProccess>
+ <TestimonialsSections></TestimonialsSections>
+ <CTA></CTA>
+ <Footer></Footer>
+
+ <script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  if(btn && menu){
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  }
+ </script>
+</BaseLayouts>

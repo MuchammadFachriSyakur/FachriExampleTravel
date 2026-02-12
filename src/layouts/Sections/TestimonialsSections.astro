@@ -1,0 +1,78 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section class="py-24 bg-white dark:bg-background-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h3 class="text-3xl font-bold mb-4">Apa Kata Mereka?</h3>
+        </div>
+        <div
+          class="flex flex-col md:flex-row gap-8 justify-center items-center"
+        >
+          <div
+            class="max-w-md bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <Image
+                alt="Customer"
+                class="w-14 h-14 rounded-full object-cover"
+                data-alt="Happy traveler smiling portrait"
+                src="/images/hero.webp"
+                alt="Happy family enjoying holiday at a tropical resort in Indonesia"
+                width={50}
+                height={50}
+              />
+              <div>
+                <h5 class="font-bold">Andi Pratama</h5>
+                <div class="flex text-yellow-400">
+                  <span class="material-icons text-sm">star</span>
+                  <span class="material-icons text-sm">star</span>
+                  <span class="material-icons text-sm">star</span>
+                  <span class="material-icons text-sm">star</span>
+                  <span class="material-icons text-sm">star</span>
+                </div>
+              </div>
+            </div>
+            <p
+              class="italic text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              "Pengalaman luar biasa liburan ke Bali bareng keluarga. Semua
+              diatur dengan rapi, guide-nya sangat informatif dan sabar. Sangat
+              direkomendasikan!"
+            </p>
+          </div>
+          <div
+            class="max-w-md bg-background-light dark:bg-slate-800 p-8 rounded-2xl border border-primary/5"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <Image
+                alt="Customer"
+                class="w-14 h-14 rounded-full object-cover"
+                data-alt="Young female traveler at scenic location"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY8cAk3lLFEQbo2L9OboaPGIgjm6-juLUXvWaUBWcMAM-ww0vtZLlMIy-AMUTknnNNRqZ9kX5cflvj7q17hg5WYq_k21aVz5Tfr7CB9ghBeAEmUidZLNzlbNDTRNjZyXuJdyDmEjo777xcioMAvx2GBezK6DgjTaQJXN3gyp9BriPeHWWb18Uzb7_Q0tZSx4NVZPBb4aBFkkE9tVYz9zY3svCqmLe2wrVPxnNjpRCH_o6AS6jgaGViSgSlyBx89C4cvP8x6A44Fys"
+                width={50}
+                height={50}
+              />
+              <div>
+                <h5 class="font-bold">Santi Wijaya</h5>
+                <div class="flex text-yellow-400">
+                  <span class="material-icons text-sm">star</span>
+                  <span class="material-icons text-sm">star</span>
+                  <span class="material-icons text-sm">star</span>
+                  <span class="material-icons text-sm">star</span>
+                  <span class="material-icons text-sm">star</span>
+                </div>
+              </div>
+            </div>
+            <p
+              class="italic text-slate-600 dark:text-slate-400 leading-relaxed"
+            >
+              "Pertama kali pake jasa travel dan puas banget. Trip ke Lombok
+              jadi tenang karena hotel dan transportasinya bener-bener premium.
+              Pasti bakal repeat order!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>

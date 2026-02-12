@@ -1,0 +1,72 @@
+---
+import { Image } from "astro:assets";
+import aboutImage from "../../assets/images/about.webp";
+---
+
+<section class="py-24 bg-white dark:bg-background-dark" id="tentang">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="relative">
+            <Image
+              alt="IndoTravel travel agency office building exterior"
+              class="rounded-2xl shadow-2xl relative z-10"
+              src={aboutImage}
+              loading="lazy"
+            />
+            <div
+              class="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/10 rounded-full -z-0"
+            ></div>
+            <div
+              class="absolute -top-6 -left-6 w-32 h-32 bg-primary/5 rounded-xl -z-0"
+            ></div>
+          </div>
+          <div>
+            <h2
+              class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4"
+            >
+              Siapa Kami
+            </h2>
+            <h3 class="text-4xl font-bold mb-6 leading-tight">
+              Berkomitmen Menghadirkan Pengalaman Perjalanan Terbaik
+            </h3>
+            <p
+              class="text-slate-600 dark:text-slate-400 text-lg mb-8 leading-relaxed"
+            >
+              FachriExampleTravel adalah agen wisata berlisensi resmi yang telah
+              dipercaya ribuan keluarga dan perusahaan di Indonesia. Kami
+              mengedepankan keamanan, kenyamanan, dan transparansi dalam setiap
+              paket perjalanan yang kami tawarkan.
+            </p>
+            <div class="space-y-4 mb-10">
+              <div class="flex items-start gap-4">
+                <span class="material-icons text-primary mt-1"
+                  >check_circle</span
+                >
+                <div>
+                  <h4 class="font-bold">Legalitas Lengkap</h4>
+                  <p class="text-sm text-slate-500">
+                    Izin usaha pariwisata resmi dan anggota ASITA.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="material-icons text-primary mt-1"
+                  >check_circle</span
+                >
+                <div>
+                  <h4 class="font-bold">Layanan 24/7</h4>
+                  <p class="text-sm text-slate-500">
+                    Customer service sigap membantu kapan pun dibutuhkan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all"
+            >
+              Pelajari Selengkapnya
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
