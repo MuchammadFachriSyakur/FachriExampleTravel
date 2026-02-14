@@ -19,3 +19,27 @@
   --radius-xl: 0.75rem;
   --radius-full: 9999px;
 }
+
+@layer base {
+
+  button,
+  a {
+    @apply transition-all duration-300;
+  }
+
+  button:hover,
+  a:hover {
+    @apply scale-105 cursor-pointer;
+  }
+
+  button:active,
+  a:active {
+    @apply scale-95;
+  }
+
+  /* Accessibility: Focus visible state */
+  button:focus-visible,
+  a:focus-visible {
+    @apply outline-3 outline-primary outline-offset-2;
+  }
+}

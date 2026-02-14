@@ -16,7 +16,8 @@ const {
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="author" content="IndoTravel" />
+    <meta name="keywords" content="travel agency indonesia, paket wisata bali, paket wisata jogja, paket wisata lombok, fachriexampletravel, tour profesional indonesia, agen travel terpercaya, liburan keluarga indonesia" />
+    <meta name="author" content="FachriExampleTravel" />
     <link rel="canonical" href={url} />
 
     <!-- Open Graph -->
@@ -43,6 +44,9 @@ const {
   </head>
 
   <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display">
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
+
 </html>
