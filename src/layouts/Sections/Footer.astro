@@ -1,25 +1,30 @@
+---
+import { Image } from "astro:assets";
+import logo from "../../assets/images/logo.webp";
+---
+
 <footer
-      class="bg-background-light dark:bg-slate-950 pt-20 pb-10 border-t border-primary/5"
+      class="bg-background-light pt-20 pb-10 border-t border-primary/5"
       id="kontak"
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-4 gap-12 mb-16">
           <div class="col-span-1 md:col-span-1">
             <div class="flex items-center gap-3">
-               <img src="/images/logo.webp" alt="FachriExampleTravel Logo" class="w-10 h-10 bg-primary rounded-lg" loading="lazy" />
+               <Image src={logo} alt="FachriExampleTravel Logo" class="w-10 h-10 bg-primary rounded-lg" />
                <span class="text-2xl font-bold tracking-tight text-primary">
                  FachriExampleTravel
                </span>
             </div>
             <p
-              class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6"
+              class="text-slate-500 text-sm leading-relaxed mb-6"
             >
               Penyedia layanan perjalanan wisata premium yang berfokus pada
               kualitas dan kepuasan pelanggan di seluruh Indonesia.
             </p>
             <div class="flex gap-4">
               <a
-                class="w-10 h-10 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-sm hover:text-primary transition-colors"
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:text-primary transition-colors"
                 href="https://facebook.com/fachriexampletravel"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -32,7 +37,7 @@
                 </svg>
               </a>
               <a
-                class="w-10 h-10 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-sm hover:text-primary transition-colors"
+                class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:text-primary transition-colors"
                 href="https://instagram.com/fachriexampletravel"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -102,7 +107,7 @@
           </div>
         </div>
         <div
-          class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4"
+          class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <p class="text-xs text-slate-500">
             © FachriExampleTravel. Hak Cipta Dilindungi.

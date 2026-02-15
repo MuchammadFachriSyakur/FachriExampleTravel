@@ -1,12 +1,17 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.webp";
+---
+
 <nav
-  class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10"
+  class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20">
       
       <!-- Logo -->
       <div class="flex items-center gap-3">
-        <img src="/images/logo.webp" alt="FachriExampleTravel Logo" class="w-10 h-10 bg-primary rounded-lg" loading="lazy" />
+        <Image src={logo} alt="FachriExampleTravel Logo" class="w-10 h-10 bg-primary rounded-lg" />
         <span class="text-2xl font-bold tracking-tight text-primary">
           FachriExampleTravel
         </span>
@@ -14,13 +19,13 @@
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex items-center space-x-8">
-        <a class="nav-link" href="#">Beranda</a>
-        <a class="nav-link" href="#keunggulan">Keunggulan</a>
-        <a class="nav-link" href="#paket">Paket Wisata</a>
-        <a class="nav-link" href="#prosedur">Prosedur</a>
-        <a class="nav-link" href="#testimoni">Testimoni</a>
-        <a class="nav-link" href="#tentang">Tentang</a>
-        <a class="nav-link" href="#kontak">Kontak</a>
+        <a class="nav-link text-slate-700 hover:text-primary transition-colors" href="#Hero">Beranda</a>
+        <a class="nav-link text-slate-700 hover:text-primary transition-colors" href="#keunggulan">Keunggulan</a>
+        <a class="nav-link text-slate-700 hover:text-primary transition-colors" href="#paket">Paket Wisata</a>
+        <a class="nav-link text-slate-700 hover:text-primary transition-colors" href="#prosedur">Prosedur</a>
+        <a class="nav-link text-slate-700 hover:text-primary transition-colors" href="#testimoni">Testimoni</a>
+        <a class="nav-link text-slate-700 hover:text-primary transition-colors" href="#tentang">Tentang</a>
+        <a class="nav-link text-slate-700 hover:text-primary transition-colors" href="#kontak">Kontak</a>
 
         <a
           href="https://wa.me/6287715240225?text=Halo%20FachriExampleTravel,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20paket%20wisata."
@@ -35,7 +40,7 @@
       <button
         id="menuBtn"
         aria-label="Buka Menu"
-        class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-black/5 dark:hover:bg-white/10 transition"
+        class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-black/5 transition"
       >
         <span class="material-icons">menu</span>
       </button>
@@ -45,16 +50,16 @@
   <!-- Mobile Menu -->
   <div
     id="mobileMenu"
-    class="md:hidden hidden bg-white dark:bg-background-dark border-t border-primary/10"
+    class="md:hidden hidden bg-white border-t border-primary/10"
   >
     <div class="flex flex-col p-6 space-y-4">
-      <a class="mobile-link" href="#">Beranda</a>
-      <a class="mobile-link" href="#keunggulan">Keunggulan</a>
-      <a class="mobile-link" href="#paket">Paket Wisata</a>
-      <a class="mobile-link" href="#prosedur">Prosedur</a>
-      <a class="mobile-link" href="#testimoni">Testimoni</a>
-      <a class="mobile-link" href="#tentang">Tentang</a>
-      <a class="mobile-link" href="#kontak">Kontak</a>
+      <a class="mobile-link text-slate-700 hover:text-primary transition-colors" href="#Hero">Beranda</a>
+      <a class="mobile-link text-slate-700 hover:text-primary transition-colors" href="#keunggulan">Keunggulan</a>
+      <a class="mobile-link text-slate-700 hover:text-primary transition-colors" href="#paket">Paket Wisata</a>
+      <a class="mobile-link text-slate-700 hover:text-primary transition-colors" href="#prosedur">Prosedur</a>
+      <a class="mobile-link text-slate-700 hover:text-primary transition-colors" href="#testimoni">Testimoni</a>
+      <a class="mobile-link text-slate-700 hover:text-primary transition-colors" href="#tentang">Tentang</a>
+      <a class="mobile-link text-slate-700 hover:text-primary transition-colors" href="#kontak">Kontak</a>
 
       <a
         href="https://wa.me/6281234567890?text=Halo%20FachriExampleTravel,%20saya%20ingin%20konsultasi%20gratis%20mengenai%20paket%20wisata."
